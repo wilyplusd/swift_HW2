@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devushki-na-avu2-1080x1920" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-Fp-cIH" userLabel="Image" customClass="P">
+                    <rect key="frame" x="20" y="67" width="120" height="120"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Q8s-XN-Fdn"/>
+                        <constraint firstAttribute="width" constant="120" id="Z38-i0-9eT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Александра" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-IA-TMX">
+                    <rect key="frame" x="160" y="67" width="209" height="17"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01.01.2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlr-HD-76n">
+                    <rect key="frame" x="160" y="104" width="209" height="17"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дели" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8T-s1-ASA">
+                    <rect key="frame" x="160" y="141" width="209" height="17"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pUv-wn-SuQ">
+                    <rect key="frame" x="20" y="207" width="349" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="CUo-9t-WfR"/>
+                    </constraints>
+                    <mutableString key="text">Как и в любом деле, даже в походах существует своя лестница опыта, каждая ступень которой поднимает путешествующего на новый уровень. Суть этого утверждения заключается в том, что выбирать маршруты можно как совсем простые, так и более сложные – их местность, высота, условия.</mutableString>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fqQ-IA-TMX" firstAttribute="leading" secondItem="5e6-Fp-cIH" secondAttribute="trailing" constant="20" id="6gJ-De-SB7"/>
+                <constraint firstItem="pUv-wn-SuQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="8G4-tB-vco"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mlr-HD-76n" secondAttribute="trailing" constant="20" id="ELh-m7-RlK"/>
+                <constraint firstItem="fqQ-IA-TMX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="InV-zT-aqz"/>
+                <constraint firstItem="mlr-HD-76n" firstAttribute="top" secondItem="fqQ-IA-TMX" secondAttribute="bottom" constant="20" id="O0W-69-bUp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t8T-s1-ASA" secondAttribute="trailing" constant="20" id="VGS-8k-IGW"/>
+                <constraint firstItem="t8T-s1-ASA" firstAttribute="top" secondItem="mlr-HD-76n" secondAttribute="bottom" constant="20" id="Zx1-bv-9WK"/>
+                <constraint firstItem="5e6-Fp-cIH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="dAy-KO-B8f"/>
+                <constraint firstItem="mlr-HD-76n" firstAttribute="leading" secondItem="5e6-Fp-cIH" secondAttribute="trailing" constant="20" id="fTj-0F-VPj"/>
+                <constraint firstItem="t8T-s1-ASA" firstAttribute="leading" secondItem="5e6-Fp-cIH" secondAttribute="trailing" constant="20" id="k9w-UZ-H4v"/>
+                <constraint firstItem="5e6-Fp-cIH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="phk-ql-nZ3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fqQ-IA-TMX" secondAttribute="trailing" constant="20" id="smq-3l-kF6"/>
+                <constraint firstItem="pUv-wn-SuQ" firstAttribute="top" secondItem="5e6-Fp-cIH" secondAttribute="bottom" constant="20" id="xlm-bS-M5N"/>
+                <constraint firstItem="5e6-Fp-cIH" firstAttribute="top" secondItem="fqQ-IA-TMX" secondAttribute="bottom" constant="-17" id="yhF-al-H3i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pUv-wn-SuQ" secondAttribute="trailing" constant="20" id="yvb-Hp-DWY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-500.76923076923077" y="-649.05213270142178"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="devushki-na-avu2-1080x1920" width="1080" height="1920"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
