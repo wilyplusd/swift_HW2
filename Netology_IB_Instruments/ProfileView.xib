@@ -50,7 +50,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="CUo-9t-WfR"/>
                     </constraints>
-                    <mutableString key="text">Как и в любом деле, даже в походах существует своя лестница опыта, каждая ступень которой поднимает путешествующего на новый уровень. Суть этого утверждения заключается в том, что выбирать маршруты можно как совсем простые, так и более сложные – их местность, высота, условия.</mutableString>
+                    <string key="text">Как и в любом деле, даже в походах существует своя лестница опыта, каждая ступень которой поднимает путешествующего на новый уровень. Суть этого утверждения заключается в том, что выбирать маршруты можно как совсем простые, так и более сложные – их местность, высота, условия.</string>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -76,6 +76,13 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pUv-wn-SuQ" secondAttribute="trailing" constant="20" id="yvb-Hp-DWY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="Name" destination="fqQ-IA-TMX" id="uYS-ct-3bV"/>
+                <outlet property="avatarImage" destination="5e6-Fp-cIH" id="GYu-oK-DW2"/>
+                <outlet property="cityLabel" destination="t8T-s1-ASA" id="laI-43-68y"/>
+                <outlet property="dateLabel" destination="mlr-HD-76n" id="RGc-Ff-42z"/>
+                <outlet property="descriptionLabel" destination="pUv-wn-SuQ" id="gno-aY-dFZ"/>
+            </connections>
             <point key="canvasLocation" x="-500.76923076923077" y="-649.05213270142178"/>
         </view>
     </objects>
